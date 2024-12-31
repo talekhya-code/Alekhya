@@ -20,6 +20,11 @@ public class TestBase {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
+	
+	public void CloseBrowser() {
+		driver.close();
+		driver.quit();
+	}
 
 }
 

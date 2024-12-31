@@ -10,18 +10,18 @@ import io.cucumber.java.en.When;
 
 public class LoginStepDefinition {
 
-	LaunchPage lp = new LaunchPage();
+	LaunchPage launchpage = new LaunchPage();
 	LoginPage login;
-	HomePage hp = new HomePage();
+	HomePage homepage = new HomePage();
 
 	@Given("The application is launched")
 	public void the_application_is_launched() {
-		lp.verifyApplicationLaunchPage();
+		launchpage.verifyApplicationLaunchPage();
 	}
 
 	@When("User clicks the login button")
 	public void user_clicks_the_login_button() {
-		login = lp.navigateToLoginPage();
+		login = launchpage.navigateToLoginPage();
 	}
 
 	@Then("Verify the Login Page have all fields")
@@ -41,7 +41,7 @@ public class LoginStepDefinition {
 
 	@Then("Verify user is navigated to Home Page")
 	public void verify_user_is_navigated_to_home_page() {
-	    hp.verifyApplicationHome();
+		homepage.verifyApplicationHome();
 	}
 	
 
