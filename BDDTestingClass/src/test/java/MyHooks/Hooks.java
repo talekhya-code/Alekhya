@@ -12,9 +12,9 @@ public class Hooks extends TestBase{
 		LaunchApp();
 	}
 	
-//	@After
-//	public void browserClosing() {
-//		CloseBrowser();
-//	}
+	@After
+	public void browserClosing() {
+		CloseBrowser();
+	}
 
 }
